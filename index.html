@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script>
+    const storedTheme = localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    if (storedTheme) document.documentElement.setAttribute("data-theme", storedTheme); 
+</script>
+    <meta charset="UTF-8">
+        <title>Gabi - xatframe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="xatid" content="373632367">
+        <meta name="xatuser" content="SimplyGabi">
+        <meta name="author" content="Gabi">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Berkshire Swash">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cookie">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="https://simplygabi.github.io/butterflys/assets/css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="https://unpkg.com/phosphor-icons"></script>
+   </head>
+<body>
+    <div class="profile">
+        <div class="profile-bg"></div>
+        <div class="userinfo"></div>
+        <div class="current-status"></div>
+    <div class="profile-image">
+    </div> 
+    <div class="content">
+        <div class="profile-info">
+            <div class="profile-name animated">Gabi</div>
+                <div class="profile-text animated">I Love Butterflys</div>
+    </div>
+    <div class="player">
+        <div class="circ circle"></div>
+    </div>
+    </div>
+    </div>
+    <div class="butterflys">
+        <div class="butterflys-turn">
+            <div class="butterflys-flutter"></div>
+        </div>
+    </div>
+    <div class="butterflys">
+        <div class="butterflys-turn">
+            <div class="butterflys-flutter"></div>
+        </div>
+    </div>
+    <div class="butterflys">
+        <div class="butterflys-turn">
+            <div class="butterflys-flutter"></div>
+        </div>
+    </div>
+    <div id="bottom">
+    <button id="theme-toggle" aria-label="toggle dark mode" type="button">
+        <span class="light-on corner-icon" title="toggle dark mode">
+	    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+		</span>
+        <span class="light-off corner-icon" title="toggle light mode">
+	    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </span>
+     </button>
+  </div>
+        <audio id="music" src="https://simplygabi.github.io/butterflys/assets/msc/thec.mp3"></audio>
+        <script src="https://simplygabi.github.io/butterflys/assets/js/player.js"></script>
+        <script src="https://simplygabi.github.io/butterflys/assets/js/butterflys.js"></script>
+   </body>
+</html>
